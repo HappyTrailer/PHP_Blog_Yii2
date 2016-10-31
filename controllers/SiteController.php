@@ -127,7 +127,8 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
-	
+	public function assddfsa()
+	{}
 	public function actionContact3()
     {
         $model = new ContactForm();
