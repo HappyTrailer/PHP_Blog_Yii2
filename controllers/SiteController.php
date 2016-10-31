@@ -98,6 +98,9 @@ class SiteController extends Controller
         ]);
     }
 
+    public function sdfsd()
+    {}
+    
     /**
      * Logout action.
      *
