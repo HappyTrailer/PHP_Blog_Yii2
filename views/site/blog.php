@@ -19,14 +19,14 @@ hr.type_3 {
                                 <?= $post->title ?>
                             </h2>
                             <h4 style="font-weight: bold;">
-                                <?= $categories[(int)($post->category_id)] ?>
+                                <?= $post->categories->name ?>
                             </h4>
                             <h3 class="post-subtitle" style="font-weight: bold;">
                                 <?= $post->content ?>
                             </h3>
                         </a>
                         <img class="img-responsive" src="../../<?= $post->img_src ?>" alt="">
-                        <p class="post-meta" style="float: right; margin: 10px; font-weight: bold;">Posted by <a href="#"><?= $users[(int)($post->user_id)] ?></a> on <?= $post->getDateStr() ?></p>
+                        <p class="post-meta" style="float: right; margin: 10px; font-weight: bold;">Posted by <a href="#"><?= $post->users->name ?></a> on <?= $post->getDateStr() ?></p>
                     </div>
                     <hr class="type_3">
                 <? } ?>

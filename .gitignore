@@ -25,6 +25,10 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+# uploads files
+uploads/
+# config file
+config/web.php
 
 tests/_output/*
 tests/_support/_generated
