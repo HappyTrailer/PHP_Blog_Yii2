@@ -196,7 +196,7 @@ class SiteController extends Controller
         $categories = ArrayHelper::map(Categories::find()->all(), 'id', 'name');
         $users = ArrayHelper::map(Users::find()->all(), 'id', 'name');
         $posts = Posts::find()->orderBy(["updated_at" => SORT_DESC])->all();
-        $posts = Posts::find()->with('categories')->with('users')->all();
+        $posts = Posts::find()->with('categories')->with('users')->orderBy(["updated_at" => SORT_DESC])->all();
         return $this->render('blog', [
             'categories' => $categories,
             'users' => $users,
