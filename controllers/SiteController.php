@@ -100,6 +100,8 @@ class SiteController extends Controller
 
     public function sdfsd()
     {}
+	public function BBBBBB()
+    {}
     
     /**
      * Logout action.
